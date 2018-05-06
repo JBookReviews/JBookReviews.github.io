@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Books</title>
+<script>function answer(){ 
+var radio = document.getElementsByName("book1"); 
+var selection = false; 
+var message = ""; 
+
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "4" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+} //end function answer 
+</script>
+
+</head>
+<body>
+<h2 class="p1"> Schooled </h2>
+		<img src="https://books.google.com/books/content?id=vpl8B7jp-fsC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE73iOIxZn_-PpeKFCC-1NWhpRQc14GzFb1nL-KvTICXmB3EVGdXIH3YOviKp7W3dRJB9b-BRgAa7b1nK9vT9y1YVqT6Wn8ZxuknHBGq43stuh8y_zOpK1kcKA9MpGtogl_xrZIbY" />
+		<p class="p1"> This is an extrordinary book, about a teen named Cap, who has never been in the real world. He lived in a community called Garland, where they make their own rules. When his grandma falls out of a tree, he has to go live with someone, and go to middle school. I don't want to spoil the whole book, but it definitly is a good choice! </p>
+		<h3 class="p1"> Grades 4-6             5 Stars</h3>
+		<p class="p1">After you read the book now do the Trivia question!</p>
+		<div class="trivia">
+		<h2 class="p1">Schooled Trivia</h2>
+		<p class="p1">At the halloween dance, who did cap and sophie go as?</p>
+		<form>
+			<input type="radio" name="book1" value="1"> Popeye and Olive Oyl <br>
+			<input type="radio" name="book1" value="2"> Mickey and Minnie <br>
+			<input type="radio" name="book1" value="3"> Phineas and Ferb <br>
+			<input type="radio" name="book1" value="4"> Simba and Nala <br>
+			<input type="button" value="Click Here" onclick="answer()">
+		</form>
+		<div id="response"> </div>
+		</div>
+		<h2 class="p1"> How to Capture an Invisible Cat </h2>
+		<img src="https://books.google.com/books/content?id=DX57CwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71AMovN0wGtJ_sdv9V8G-e3B03iizsHkaJPhrnPRsk-d9duutEQaf5fqBmq9Yw691_b6oVjgiwdwqhRKzPyN9RSydQ0e0lpSj-6qkgxbHmcxJobmpWfDFh-E3vxjX-WnRDxCuhn" />
+		<p class="p1"> This is a story about two kids who end up saving the world. One is a genius, who made an invisible cat. Not just any invisible cat! A GIANT invisible cat! They have to save the world in just 24 hours. Do you think they can do it? Or will they just die trying? Find out in How to Capture an Invisible Cat. See you there! </p>
+		<h3 class="p1"> Grades 5-7             4 1/2 Stars</h3>
+		<hr>
+		<center class="p1"> Jack <a href="https://guest.portaportal.com/jbooks">Find all the books here</a> </center>
+</body>
+</html>
